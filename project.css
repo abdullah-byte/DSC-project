@@ -1,0 +1,38 @@
+body{
+    background-color: brown;
+    padding: 0%;
+    align-items: center;
+    text-align: center;
+
+}
+.h1{
+    text-align: center;
+    font-family: monospace;
+}
+.results{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50%;
+}
+.resultContent{
+background-color: white;
+color: black;
+text-align: center;
+border-radius: 5px;
+width: 95%;
+height: auto;
+padding-bottom: 25%;
+}
+.resultBody .link{
+    text-decoration: none;
+    border: 1px solid #c7460b;
+    color: white;
+    background-color: #c23c07;
+    padding: 10px;
+    border-radius: 5px;
+}
+.resultBody .link:hover{
+    color: #c23c07;
+    background-color: white;
+}
