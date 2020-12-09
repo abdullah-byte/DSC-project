@@ -1,41 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIKI APP</title>
+    <link rel="stylesheet" href="project.css">
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-        <title>WIKI SEARCH APP</title>
-        <link rel="stylesheet" href="project.css">
-    </head>
-    <div class="h1">
-   <h1><span style ="color:green">WIKI</span> <span style="color: white">SEARCH</span> <span style="color: green">APP</span></h1>
+<main>
+  <header class="header">
+    <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/657px-Wikipedia-logo-v2.svg.png" alt="Wikipedia Logo" />
+    <h1><span style ="color:green">WIKI</span> <span style="color: white">SEARCH</span> <span style="color: green">APP</span></h1>
 
+    <form class="search-form js-search-form">
+      <input placeholder="Type a keyword and press Enter to search" type="search" class="search-input js-search-input" autofocus />
+    </form>
+  </header>
+
+  <div class="loading-indicator">
+    <div class="sk-chase js-spinner hidden">
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
     </div>
-    <body>
-        <section class="searchbar">
-        <p>Look up the meaning of words, phrase or nouns. No questions please</p>
-        <p>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        </p>
-        <input type="search" id="search" placeholder="input the word or phrase here" size="90">
-        <button onclick="apiCall">search</button>
-        </section>
+  </div>
 
-        <section class="result">
-            <div class="resultContent">
-                <div>
-                    <h2 id="resultTitle"></h2>
-                </div>
-                <div class="resultBody">
-                    <p id="resultBodyA"></p>
-                    <p id="resultBodyB"></p>
-                    <a href="" class="link" target="blank"></a>
-            
-                </div>
-            </div>
-        </section>
-        <section class="copyright">
-        <h1>&copy; Abdullah Mumuni</h1>
-        </section>
-    </body>
-    <script src="project.js"></script>
+  <section class="search-results js-search-results"></section>\
+
+  <section class="copyright">
+  <p>&copy;ABDULLAH MUMUNI</p>
+  </section>
+</main>
+<script src="project.js"></script>
 </html>
