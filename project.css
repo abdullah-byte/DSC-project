@@ -1,5 +1,5 @@
 body{
-    background-color: brown;
+    background-color: grey;
     padding: 0%;
     align-items: center;
     text-align: center;
@@ -9,6 +9,22 @@ body{
     text-align: center;
     font-family: monospace;
 }
+
+section{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+.searchBar{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-basis: 80%;
+}
+.searchBar input{
+    padding: 5px 8px;
+    width: 80%;
+    height: auto;
+    margin: auto;
 .results{
     display: flex;
     justify-content: center;
@@ -16,7 +32,6 @@ body{
     margin-top: 50%;
 }
 .resultContent{
-background-color: white;
 color: black;
 text-align: center;
 border-radius: 5px;
@@ -35,4 +50,7 @@ padding-bottom: 25%;
 .resultBody .link:hover{
     color: #c23c07;
     background-color: white;
+}
+.copyright{
+    text-align: inherit;
 }

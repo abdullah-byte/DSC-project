@@ -1,35 +1,41 @@
 <!DOCTYPE html>
-<html lang="US">
+<html lang="en">
 
     <head>
-        <title>DSC PROJECT</title>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>WIKI SEARCH APP</title>
         <link rel="stylesheet" href="project.css">
     </head>
     <div class="h1">
-    <h1>WIKI SEARCH APP</h1>
+   <h1><span style ="color:green">WIKI</span> <span style="color: white">SEARCH</span> <span style="color: green">APP</span></h1>
+
     </div>
     <body>
         <section class="searchbar">
         <p>Look up the meaning of words, phrase or nouns. No questions please</p>
         <p>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         </p>
-        <div class="input">
-        <input type="search"  placeholder="input the word or phrase here" size="90">
-        <button onclick="apicall()">search</button>
-        </div>
+        <input type="search" id="search" placeholder="input the word or phrase here" size="90">
+        <button onclick="apiCall">search</button>
         </section>
+
         <section class="result">
             <div class="resultContent">
                 <div>
                     <h2 id="resultTitle"></h2>
                 </div>
                 <div class="resultBody">
-                    <p id="resultBody0"></p>
-                    <p id="resultBody2"></p>
+                    <p id="resultBodyA"></p>
+                    <p id="resultBodyB"></p>
+                    <a href="" class="link" target="blank"></a>
             
                 </div>
             </div>
         </section>
+        <section class="copyright">
+        <h1>&copy; Abdullah Mumuni</h1>
+        </section>
     </body>
-
+    <script src="project.js"></script>
 </html>
